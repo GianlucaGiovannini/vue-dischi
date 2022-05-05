@@ -3,7 +3,8 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #1e2d3b;
+    background-color: $bgPrimary;
+    ;
     height: 100vh;
     overflow: auto;
 }

@@ -28,12 +28,12 @@ export default {
 
 <style lang="scss" scoped>
 .album {
-  background-color: rgb(255 255 255 / 7%);
+  background-color: $bgTransparent;
   h3 {
     color: white;
   }
   .info {
-    color: #808080;
+    color: $albumTextColor;
   }
 }
 </style>

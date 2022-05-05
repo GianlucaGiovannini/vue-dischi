@@ -32,12 +32,18 @@ export default {
     };
   },
   methods: {
+    timer() {
+      setTimeout(() => {
+        this.loading = false
+      }, 3000);
+    },
+
     callApi() {
       axios
         .get(this.API_URL)
         .then((response) => {
           this.discs = response.data.response;
-          this.loading = false;
+          /* this.loading = false; */
         })
         .catch((error) => {
           console.error(error);
@@ -47,6 +53,7 @@ export default {
   },
   mounted() {
     this.callApi();
+    this.timer();
   },
 };
 </script>

@@ -35,7 +35,7 @@ export default {
     timer() {
       setTimeout(() => {
         this.loading = false
-      }, 3000);
+      }, 2500);
     },
 
     callApi() {
@@ -47,7 +47,7 @@ export default {
         })
         .catch((error) => {
           console.error(error);
-          this.error = `Sorry There is a Problem! ${error}`;
+          /* this.error = `Sorry There is a Problem! ${error}`; */
         });
     },
   },

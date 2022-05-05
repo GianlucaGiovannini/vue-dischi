@@ -18,6 +18,6 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    background-color: rgb(255 255 255 / 7%);;
+    background-color: rgb(255 255 255 / 7%);
 }
 </style>

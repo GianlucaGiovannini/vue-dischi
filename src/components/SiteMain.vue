@@ -1,17 +1,19 @@
 <template>
-    <main>
-
-    </main>
+  <main>
+      <DiscList />
+  </main>
 </template>
 
 <script>
-/* import axios from "axios" */
+import DiscList from "@/components/DiscListComponent.vue"
 
 export default {
-    name: "SiteMain"
-}
+  name: "SiteMain",
+  components: {
+      DiscList
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
 </style>

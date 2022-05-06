@@ -24,8 +24,8 @@ export default {
   methods: {
     change(){
       console.log(this.selectValue)
-      this.
       state.selectValue = this.selectValue;
+      console.log(state)
     }
   },
 };

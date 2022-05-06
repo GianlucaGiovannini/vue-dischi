@@ -1,15 +1,17 @@
 <template>
-  <img src="@/assets/img/logo.png" alt="">
+  <a href="#">
+    <img src="@/assets/img/logo.png" alt="" />
+  </a>
 </template>
 
 <script>
 export default {
-    name: "LogoComponent"
-}
+  name: "LogoComponent",
+};
 </script>
 
 <style lang="scss" scoped>
-    img {
-        width: 70px;
-    }
+img {
+  width: 70px;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container-xl py-3">
+    <div class="container-fluid py-3">
         <LogoComponent />
     </div>
   </header>

@@ -16,6 +16,7 @@
 import axios from "axios";
 import DiscItem from "@/components/DiscItemComponent.vue";
 import Loader from "@/components/LoaderComponent.vue";
+import state from "@/state";
 
 export default {
   name: "DiscListComponent",
@@ -28,7 +29,7 @@ export default {
       API_URL: "https://flynn.boolean.careers/exercises/api/array/music",
       discs: null,
       loading: true,
-      error: null,
+      /* error: null,  <-- non serve perché ho messo un setTimout per far vedere il caricamento*/ 
     };
   },
   methods: {
@@ -55,6 +56,13 @@ export default {
     this.callApi();
     this.timer();
   },
+  computed: {
+    filteredDisc(){
+      return this.discs.filter(disc =>{
+        return disc.genre.toLowerCase().include(state.selectValue.toLowerCase())
+      })
+    }
+  }
 };
 </script>
 

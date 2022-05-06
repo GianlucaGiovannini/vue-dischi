@@ -3,11 +3,12 @@
         <label for="gender_album" class="text-white fs-3">Seleziona la tipologia dell'album</label>
         <div class="pt-2">
             <select 
-            name="gender_album" 
-            id="gender_album" 
-            @click="$emit('select', $event.target.value)" 
-            v-on:select="$emit('select', $event.target.value)">
-                <option value="all">All</option>
+                name="gender_album" 
+                id="gender_album" 
+                @change="$emit('changeSelect')"
+                @input="$emit('input', $event.target.value)"
+            >
+                <option value="">All</option>
                 <option value="rock">Rock</option>
                 <option value="pop">Pop</option>
                 <option value="jazz">Jazz</option>
@@ -22,7 +23,7 @@ export default {
     name: "SelectGenderComponent",
     props: {
         selectValue: String
-    }
+    },
 }
 </script>
 

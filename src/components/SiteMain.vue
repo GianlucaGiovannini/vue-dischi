@@ -1,6 +1,6 @@
 <template>
   <main>
-      <SelectGender v-model="selectValue" @select="change" />
+      <SelectGender v-model="selectValue" @changeSelect="changeState" />
       <DiscList />
   </main>
 </template>
@@ -18,14 +18,14 @@ export default {
   },
   data() {
     return {
-      selectValue: "all"
+      selectValue: ""
     }
   },
   methods: {
-    change(){
-      console.log(this.selectValue)
+    changeState(){
+      // console.log(this.selectValue)
       state.selectValue = this.selectValue;
-      console.log(state)
+      // console.log(state)
     }
   },
 };

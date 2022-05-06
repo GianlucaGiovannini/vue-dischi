@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5">
-        <DiscItem :album="album" v-for="(album, index) in discs" :key="index" />
+        <DiscItem :album="album" v-for="(album, index) in filteredDisc" :key="index" />
       </div>
     </div>
   </section>
@@ -59,7 +59,7 @@ export default {
   computed: {
     filteredDisc(){
       return this.discs.filter(disc =>{
-        return disc.genre.toLowerCase().include(state.selectValue.toLowerCase())
+        return disc.genre.toLowerCase().includes(state.selectValue.toLowerCase())
       })
     }
   }

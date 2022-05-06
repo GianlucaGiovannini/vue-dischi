@@ -5,7 +5,7 @@
             <select 
                 name="gender_album" 
                 id="gender_album" 
-                @change="$emit('changeSelect')"
+                @change="$emit('changeSelectValue')"
                 @input="$emit('input', $event.target.value)"
             >
                 <option value="">All</option>

@@ -17,6 +17,7 @@ import axios from "axios";
 import DiscItem from "@/components/DiscItemComponent.vue";
 import Loader from "@/components/LoaderComponent.vue";
 import state from "@/state";
+/* importo il file state che è globale */
 
 export default {
   name: "DiscListComponent",
